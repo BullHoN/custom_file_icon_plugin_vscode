@@ -7,6 +7,7 @@ It does not use TypeScript and only includes the `vscode` devDependency needed f
 
 [Custom Icon Docs](https://code.visualstudio.com/api/extension-guides/file-icon-theme#language-default-icons)
 
+[My Insights And Approaches](https://docs.google.com/document/d/1e47cBD_jz9VW3i230tbf_7V6KExcVqBJGWOjF4zwQuk/edit?usp=sharing)
 
 Inside package.json > contributes
 ```
