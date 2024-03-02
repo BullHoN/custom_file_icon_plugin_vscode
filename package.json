@@ -1,0 +1,49 @@
+{
+	"name": "custom-file-icon-sample",
+	"description": "custom file icon example for VS Code",
+	"version": "0.0.1",
+	"publisher": "vaibhav",
+	"repository": "https://github.com/",
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"activationEvents": [],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.helloWorld",
+				"title": "Hello World"
+			}
+		],
+		"languages": [
+			{
+				"id": "mypackage",
+				"extensions": [
+					".mypkg"
+				],
+				"icon": {
+					"dark": "./images/custom_icon.svg",
+					"light": "./images/custom_icon.svg"
+				}
+			},
+			{
+				"id": "myFileExt",
+				"extensions": [
+					".myFileExt"
+				],
+				"icon": {
+					"dark": "./images/custom_icon_2.svg",
+					"light": "./images/custom_icon_2.svg"
+				}
+			}
+		]
+	},
+	"scripts": {
+		"build": "vsce package"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.73.0",
+		"@vscode/vsce": "^2.24.0"
+	}
+}
